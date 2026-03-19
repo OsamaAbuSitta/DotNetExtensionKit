@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RootNamespace>DotNetExtensionKit</RootNamespace>
+    <AssemblyName>DotNetExtensionKit</AssemblyName>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>DotNetExtensionKit</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>DotNetExtensionKit Contributors</Authors>
+    <Description>A lightweight collection of extension methods for strings, collections, dates, and general utilities in .NET.</Description>
+    <PackageTags>extensions;helpers;utilities;string;collection;datetime;dotnet</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/YOUR_USERNAME/DotNetExtensionKit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/YOUR_USERNAME/DotNetExtensionKit</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <!-- Include symbols for debugging -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

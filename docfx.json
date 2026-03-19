@@ -1,0 +1,22 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["ExtensionKit/ExtensionKit.csproj"],
+          "src": "."
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      { "files": ["api/**.yml", "api/index.md"] },
+      { "files": ["docs/**.md", "docs/**/toc.yml"] },
+      { "files": ["toc.yml", "*.md"] }
+    ],
+    "output": "_site",
+    "template": ["default", "modern", "templates/paramtable"]
+  }
+}
