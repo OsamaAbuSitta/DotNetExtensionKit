@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DotNetExtensionKit.Tests/DotNetExtensionKit.Tests.csproj" />
+  <Project Path="DotNetExtensionKit/DotNetExtensionKit.csproj" />
+</Solution>

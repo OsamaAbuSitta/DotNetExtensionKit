@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ExtensionKit\ExtensionKit.csproj" />
+    <ProjectReference Include="..\DotNetExtensionKit\DotNetExtensionKit.csproj" />
   </ItemGroup>
 
 </Project>

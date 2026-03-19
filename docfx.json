@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "files": ["ExtensionKit/ExtensionKit.csproj"],
+          "files": ["DotNetExtensionKit/DotNetExtensionKit.csproj"],
           "src": "."
         }
       ],
