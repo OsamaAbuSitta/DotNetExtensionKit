@@ -1,4 +1,5 @@
 - name: Docs
-  href: docs/
+  href: README.md
+  homepage: README.md
 - name: API
   href: api/

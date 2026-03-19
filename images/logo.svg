@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 40" width="240" height="40">
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#512BD4"/>
+      <stop offset="100%" stop-color="#7B3FF2"/>
+    </linearGradient>
+    <filter id="iconShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#512BD4" flood-opacity="0.35"/>
+    </filter>
+    <filter id="textShadow" x="-5%" y="-10%" width="115%" height="130%">
+      <feDropShadow dx="0.5" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <!-- Icon with shadow -->
+  <rect x="2" y="4" width="32" height="32" rx="6" fill="url(#accent)" filter="url(#iconShadow)"/>
+  <text x="18" y="28" font-family="Consolas, 'Courier New', monospace" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">&lt;/&gt;</text>
+  <!-- Logo text with subtle shadow -->
+  <text x="42" y="28" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#9B6BF2" filter="url(#textShadow)">
+    <tspan fill="#512BD4">DotNet</tspan><tspan fill="#9B6BF2">ExtensionKit</tspan>
+  </text>
+</svg>

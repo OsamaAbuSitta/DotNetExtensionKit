@@ -13,8 +13,17 @@
   "build": {
     "content": [
       { "files": ["api/**.yml", "api/index.md"] },
-      { "files": ["docs/**.md", "docs/**/toc.yml"] },
+      { "files": ["**.md", "docs/**/toc.yml"] },
       { "files": ["toc.yml", "*.md"] }
+    ],
+    "globalMetadata": {
+      "_appTitle": "DotNetExtensionKit",
+      "_appLogoPath": "images/logo.svg",
+      "_appFaviconPath": "images/favicon.ico",
+      "_appFooter": "&copy; DotNetExtensionKit Contributors | <a href=\"https://github.com/dotnet-extension-kit/DotNetExtensionKit\">GitHub</a>"
+    },
+    "resource": [
+      { "files": ["images/**", "styles/**"] }
     ],
     "output": "_site",
     "template": ["default", "modern", "templates/paramtable"]

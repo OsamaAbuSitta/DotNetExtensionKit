@@ -1,6 +1,16 @@
 # DotNetExtensionKit
 
+[![NuGet](https://img.shields.io/nuget/v/DotNetExtensionKit.svg)](https://www.nuget.org/packages/DotNetExtensionKit)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A lightweight .NET library of extension methods for strings, collections, dates, and general utilities. Targets .NET Standard 2.0 for broad compatibility.
+
+## Features
+
+- **String** — truncation, case conversion, masking, slug generation, Base64, character filtering
+- **Collection** — null-safe access, batching, iteration helpers, distinct-by-key
+- **DateTime** — day/week/month/year boundaries, age calculation, weekend checks
+- **General** — null checks, safe casting, conditional transforms, range and membership checks
 
 ## Installation
 
@@ -43,69 +53,36 @@ new DateTime(1990, 3, 25).Age();       // age in years
 "b".IsIn("a", "b", "c");              // true
 ```
 
-## API Overview
+## Documentation
 
-### StringExtensions
-
-| Method | Description |
-|---|---|
-| `IsNullOrEmpty` | Check for null or empty |
-| `IsNullOrWhiteSpace` | Check for null, empty, or whitespace |
-| `HasValue` | Inverse of IsNullOrWhiteSpace |
-| `NullIfEmpty` / `NullIfWhiteSpace` | Return null instead of empty/whitespace |
-| `EmptyIfNull` | Return empty string instead of null |
-| `Truncate` / `TruncateWithEllipsis` / `TruncateWords` | Shorten strings |
-| `Left` / `Right` | Substring from start or end |
-| `SplitByCasing` | Insert spaces in PascalCase/camelCase |
-| `ToTitleCaseInvariant` / `ToCamelCase` / `ToSnakeCase` / `ToKebabCase` | Case conversions |
-| `Mask` | Mask middle characters |
-| `DigitsOnly` / `LettersOnly` / `AlphaNumericOnly` | Filter characters |
-| `RemoveWhitespace` / `CollapseWhitespace` | Whitespace manipulation |
-| `SplitLines` | Split by line breaks |
-| `ToBase64` / `FromBase64` | Base64 encoding/decoding |
-| `ToSlug` | URL-friendly slug |
-
-### DateTimeExtensions
-
-| Method | Description |
-|---|---|
-| `StartOfDay` / `EndOfDay` | Day boundaries |
-| `StartOfWeek` / `EndOfWeek` | Week boundaries (configurable start day) |
-| `StartOfMonth` / `EndOfMonth` | Month boundaries |
-| `StartOfYear` / `EndOfYear` | Year boundaries |
-| `Age` | Calculate age in years |
-| `IsWeekend` / `IsWeekday` | Day-of-week checks |
-| `IsBetween` | Range check |
-
-### CollectionExtensions
-
-| Method | Description |
-|---|---|
-| `IsNullOrEmpty` / `HasItems` | Null/empty checks |
-| `OrEmpty` / `OrEmptyList` | Null-safe enumeration |
-| `Batch` | Split into fixed-size batches |
-| `ForEach` | Iterate with action (with optional index) |
-| `DistinctBy` | Distinct by key selector |
-| `FirstOrDefault` | First element with custom default |
-| `GetValueOrDefault` | Dictionary lookup with default |
-
-### GeneralExtensions
-
-| Method | Description |
-|---|---|
-| `IsNull` / `IsNotNull` | Null checks |
-| `As` | Safe cast |
-| `If` / `IfNot` | Conditional value return |
-| `Transform` | Pipe a value through a function |
-| `Also` | Execute side-effect, return original value |
-| `IsBetween` | Inclusive range check |
-| `IsIn` | Check membership in a set |
-| `CallGenericMethod` | Invoke generic methods via reflection |
+Full API reference is available at the [documentation site](https://YOUR_USERNAME.github.io/DotNetExtensionKit/).
 
 ## Compatibility
 
-- .NET Standard 2.0 (.NET Framework 4.6.1+, .NET Core 2.0+, .NET 5+)
-- C# 8.0 nullable reference types enabled
+This library targets [.NET Standard 2.0](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0#select-net-standard-version), which is supported by:
+
+| Platform | Minimum Version |
+|---|---|
+| .NET / .NET Core | 2.0+ |
+| .NET Framework | 4.6.1+ |
+| Mono | 5.4+ |
+| Xamarin.iOS | 10.14+ |
+| Xamarin.Mac | 3.8+ |
+| Xamarin.Android | 8.0+ |
+| UWP | 10.0.16299+ |
+| Unity | 2018.1+ |
+
+The library uses C# 8.0 with nullable reference types enabled.
+
+## Contributing
+
+Contributions are welcome. Please open an issue to discuss your idea before submitting a pull request.
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b my-feature`)
+3. Commit your changes (`git commit -m "Add my feature"`)
+4. Push to the branch (`git push origin my-feature`)
+5. Open a Pull Request
 
 ## License
 

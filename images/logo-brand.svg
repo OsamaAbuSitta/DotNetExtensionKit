@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 44" width="280" height="44">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#512BD4"/>
+      <stop offset="100%" stop-color="#7B3FF2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square icon with [ ] -->
+  <rect x="2" y="4" width="36" height="36" rx="8" fill="url(#grad)"/>
+  <text x="20" y="30" font-family="Consolas, 'Courier New', monospace" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">[ ]</text>
+
+  <!-- Logotype text -->
+  <text x="48" y="20" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="1.5" fill="#512BD4">DOTNET</text>
+  <text x="48" y="36" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" letter-spacing="3.5" fill="#9B6BF2">EXTENSIONKIT</text>
+</svg>
