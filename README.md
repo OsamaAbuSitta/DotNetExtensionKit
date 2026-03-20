@@ -2,6 +2,8 @@
 
 [![NuGet](https://img.shields.io/nuget/v/DotNetExtensionKit.svg)](https://www.nuget.org/packages/DotNetExtensionKit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Docs](https://img.shields.io/badge/docs-online-blue.svg)](https://osamaabusitta.github.io/DotNetExtensionKit/README.html)
+[![API Reference](https://img.shields.io/badge/api-reference-green.svg)](https://osamaabusitta.github.io/DotNetExtensionKit/api/DotNetExtensionKit.html)
 
 A lightweight .NET library of extension methods for strings, collections, dates, and general utilities. Targets .NET Standard 2.0 for broad compatibility.
 
@@ -55,7 +57,7 @@ new DateTime(1990, 3, 25).Age();       // age in years
 
 ## Documentation
 
-Full API reference is available at the [documentation site](https://osamaabusitta.github.io/DotNetExtensionKit/).
+Full API reference is available at the [documentation site](https://osamaabusitta.github.io/DotNetExtensionKit/README.html).
 
 ## Compatibility
 
