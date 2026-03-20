@@ -14,7 +14,7 @@
     "content": [
       { "files": ["api/**.yml", "api/index.md"] },
       { "files": ["**.md", "docs/**/toc.yml"] },
-      { "files": ["toc.yml", "*.md"] }
+      { "files": ["toc.yml"] }
     ],
     "globalMetadata": {
       "_appTitle": "DotNetExtensionKit",
