@@ -13,6 +13,7 @@ A lightweight .NET library of extension methods for strings, collections, dates,
 - **Collection** — null-safe access, batching, iteration helpers, distinct-by-key
 - **DateTime** — day/week/month/year boundaries, age calculation, weekend checks
 - **General** — null checks, safe casting, conditional transforms, range and membership checks
+- ...
 
 ## Installation
 
