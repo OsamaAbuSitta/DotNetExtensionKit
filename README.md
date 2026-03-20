@@ -55,7 +55,7 @@ new DateTime(1990, 3, 25).Age();       // age in years
 
 ## Documentation
 
-Full API reference is available at the [documentation site](https://YOUR_USERNAME.github.io/DotNetExtensionKit/).
+Full API reference is available at the [documentation site](https://osamaabusitta.github.io/DotNetExtensionKit/).
 
 ## Compatibility
 

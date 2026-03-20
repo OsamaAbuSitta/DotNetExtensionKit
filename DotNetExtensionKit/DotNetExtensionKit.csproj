@@ -16,8 +16,8 @@
     <PackageTags>extensions;helpers;utilities;string;collection;datetime;dotnet</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageProjectUrl>https://github.com/YOUR_USERNAME/DotNetExtensionKit</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/YOUR_USERNAME/DotNetExtensionKit</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/OsamaAbuSitta/DotNetExtensionKit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/OsamaAbuSitta/DotNetExtensionKit</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
 
     <!-- Include symbols for debugging -->

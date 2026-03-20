@@ -20,7 +20,7 @@
       "_appTitle": "DotNetExtensionKit",
       "_appLogoPath": "images/logo.svg",
       "_appFaviconPath": "images/favicon.ico",
-      "_appFooter": "&copy; DotNetExtensionKit Contributors | <a href=\"https://github.com/dotnet-extension-kit/DotNetExtensionKit\">GitHub</a>"
+      "_appFooter": "&copy; DotNetExtensionKit Contributors | <a href=\"https://github.com/OsamaAbuSitta/DotNetExtensionKit\">GitHub</a>"
     },
     "resource": [
       { "files": ["images/**", "styles/**"] }
