@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 concurrency:
-  group: docs-${{ github.ref }}
+  group: pages-deploy
   cancel-in-progress: true
 
 permissions:
@@ -48,7 +48,10 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+          retention-days: 1
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages
