@@ -44,23 +44,7 @@ namespace DotNetExtensionKit
         {
             return string.IsNullOrWhiteSpace(value);
         }
-
-        /// <summary>
-        /// Returns true if the string is not null and not whitespace-only.
-        /// </summary>
-        /// <param name="value">The string to test.</param>
-        /// <returns><c>true</c> if <paramref name="value"/> is not <c>null</c> and contains at least one non-whitespace character; otherwise <c>false</c>.</returns>
-        /// <example>
-        /// <code>
-        /// bool result = "hello".HasValue(); // true
-        /// bool result2 = "  ".HasValue(); // false
-        /// </code>
-        /// </example>
-        public static bool HasValue(this string? value)
-        {
-            return !string.IsNullOrWhiteSpace(value);
-        }
-
+        
         /// <summary>
         /// Returns null if the string is null or empty; otherwise returns the original string.
         /// </summary>

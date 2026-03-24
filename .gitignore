@@ -18,6 +18,7 @@ project.lock.json
 
 # Visual Studio
 .vs/
+.vscode/
 *.suo
 *.user
 *.userosscache
