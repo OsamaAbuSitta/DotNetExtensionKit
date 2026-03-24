@@ -65,9 +65,11 @@ namespace DotNetExtensionKit
         /// }
         /// </code>
         /// </example>
-        public static IEnumerable<T> OrEmpty<T>(this IEnumerable<T>? collection)
+        // TODO change doc
+        // this version returns the same collection type as the input
+        public static T OrEmpty<T>(this T? collection) where T : IEnumerable
         {
-            return collection ?? Enumerable.Empty<T>();
+            return collection ?? default;
         }
 
         /// <summary>
@@ -285,5 +287,25 @@ namespace DotNetExtensionKit
 
             return dictionary.TryGetValue(key, out var value) ? value : defaultValue;
         }
+
+        // TODO docs
+        // this function is very useful when you deal with complex objects
+		public static TValue GetValueOrCreate<TKey, TValue>(this IDictionary<TKey, TValue> dict, TKey key, Func<TValue> create)
+		{
+			if (dict.TryGetValue(key, out var value)) return value;
+			value = create();
+			dict.Add(key, value);
+			return value;
+		}
+
+        // TODO see previous
+		public static TValue GetValueOrCreate<TKey, TValue>(this IDictionary<TKey, TValue> dict, TKey key, Func<TKey, TValue> create)
+		{
+			if (dict.TryGetValue(key, out var value)) return value;
+			value = create(key);
+			dict.Add(key, value);
+			return value;
+		}
+        
     }
 }
